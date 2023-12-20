@@ -13,6 +13,7 @@ import { RouterModule } from "@angular/router"
         [src]="housingLocation.photo"
         alt="Exterior photo of {{ housingLocation.name }}"
         className="listing-photo"
+        height="200px"
       />
       <h2 className="listing-heading">{{ housingLocation.name }}</h2>
       <p className="listing-description">

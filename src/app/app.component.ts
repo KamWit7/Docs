@@ -9,12 +9,14 @@ import { RouterModule } from "@angular/router"
   template: `
     <main>
       <header className="brand-name">
-        <img
-          src="/assets/logo.svg"
-          alt=""
-          className="brand-logo"
-          aria-hidden="true"
-        />
+        <a [routerLink]="['/']">
+          <img
+            src="/assets/logo.svg"
+            alt=""
+            className="brand-logo"
+            aria-hidden="true"
+          />
+        </a>
       </header>
       <section className="content">
         <router-outlet></router-outlet>

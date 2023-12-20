@@ -10,12 +10,8 @@ import { HousingLocation } from "../housing-location"
   template: `
     <section>
       <form action="">
-        <input type="text" placeholder="Filter by city" /><button
-          type="submit"
-          className="primary"
-        >
-          Search
-        </button>
+        <input type="text" placeholder="Filter by city" />
+        <button type="submit" className="primary">Search</button>
       </form>
       <section className="results">
         <app-housing-location
@@ -25,7 +21,7 @@ import { HousingLocation } from "../housing-location"
       </section>
     </section>
   `,
-  styleUrls: ["./home.component.css"],
+  styleUrl: "./home.component.css",
 })
 export class HomeComponent {
   readonly baseUrl = "https://angular.dev/assets/tutorials/common"

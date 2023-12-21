@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core"
 import { CommonModule } from "@angular/common"
-import { HousingLocation } from "../housing-location"
+import { HousingLocation } from "./housing-location"
 import { RouterModule } from "@angular/router"
 
 @Component({
@@ -8,15 +8,15 @@ import { RouterModule } from "@angular/router"
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <section className="listing">
+    <section class="listing">
       <img
         [src]="housingLocation.photo"
         alt="Exterior photo of {{ housingLocation.name }}"
-        className="listing-photo"
+        class="listing-photo"
         height="200px"
       />
-      <h2 className="listing-heading">{{ housingLocation.name }}</h2>
-      <p className="listing-description">
+      <h2 class="listing-heading">{{ housingLocation.name }}</h2>
+      <p class="listing-location">
         {{ housingLocation.city }}, {{ housingLocation.state }}
       </p>
       <a [routerLink]="['/details', housingLocation.id]">Learn More</a>

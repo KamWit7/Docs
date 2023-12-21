@@ -8,22 +8,22 @@ import { RouterModule } from "@angular/router"
   imports: [HomeComponent, RouterModule],
   template: `
     <main>
-      <header className="brand-name">
+      <header class="brand-name">
         <a [routerLink]="['/']">
           <img
             src="/assets/logo.svg"
             alt=""
-            className="brand-logo"
+            class="brand-logo"
             aria-hidden="true"
           />
         </a>
       </header>
-      <section className="content">
-        <router-outlet></router-outlet>
+      <section class="content">
+        <router-outlet />
       </section>
     </main>
   `,
-  styleUrls: ["./app.component.css"],
+  styleUrl: "./app.component.css",
 })
 export class AppComponent {
   title = "Hello World!"
